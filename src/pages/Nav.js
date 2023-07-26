@@ -48,13 +48,13 @@ function Nav() {
     const routes = useLocation();
     const currentPath = routes?.pathname;
     const id = 123;
-    let meta_images = '';
+    let meta_images = 'https://cdn3.vectorstock.com/i/1000x1000/78/57/react-icon-in-a-hexagon-vector-36587857.jpg';
     let pageTitle, pageDescription;
 
     if (currentPath === '/') {
         pageTitle = 'Home Page';
         pageDescription = 'Welcome to our website!';
-        meta_images = homeImage;
+        meta_images = 'https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/react-512.png';
     }
     else if (currentPath === '/contact') {
         pageTitle = 'Contact Page';
@@ -64,7 +64,8 @@ function Nav() {
     else {
         pageTitle = 'Home Page';
         pageDescription = 'Welcome to our website!';
-        meta_images = contactImage;
+        // meta_images = contactImage;
+        meta_images = 'https://cdn3.vectorstock.com/i/1000x1000/78/57/react-icon-in-a-hexagon-vector-36587857.jpg'
     }
 
     return (
