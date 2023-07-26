@@ -72,6 +72,19 @@ function Nav() {
 
     return (
         <>
+            <Helmet>
+                <meta name={pageTitle} content={pageDescription} />
+                <meta
+                    name="description"
+                    content={pageDescription}
+                />
+                <meta property='og:image' content={catImage} />
+                <meta property='og:image:width' content='200' />
+                <meta property='og:image:height' content='200' />
+                <meta property='og:description' content={pageDescription} />
+                {/* <meta property="og:image:type" content="image/png" /> */}
+                <meta property='og:url' content={`${currentPath}`} />
+            </Helmet>
             <nav className='navbar'>
                 <ul>
                     <li>
@@ -90,19 +103,7 @@ function Nav() {
             </nav>
 
             <Outlet />
-            <Helmet>
-                <meta name={pageTitle} content={pageDescription} />
-                <meta
-                    name="description"
-                    content={pageDescription}
-                />
-                <meta property='og:image' content={catImage} />
-                <meta property='og:image:width' content='200' />
-                <meta property='og:image:height' content='200' />
-                <meta property='og:description' content={pageDescription} />
-                {/* <meta property="og:image:type" content="image/png" /> */}
-                <meta property='og:url' content={`${currentPath}`} />
-            </Helmet>
+
         </>
     )
 }
