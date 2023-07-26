@@ -15,6 +15,7 @@ export const Home = () => {
         <Helmet>
             <title>{pageTitle}</title>
             <meta name="description" content={pageDescription} />
+            <meta property='og:title' content='Home Page !!' />
             <meta property="og:image" content={homeImage} />
             <meta property='og:image:width' content='200' />
             <meta property='og:image:height' content='200' />
@@ -30,6 +31,7 @@ export const Contact = () => {
         <Helmet>
             <title>{pageTitle}</title>
             <meta name="description" content={pageDescription} />
+            <meta property='og:title' content='Contact page !!' />
             <meta property="og:image" content={contactImage} />
             <meta property='og:image:width' content='200' />
             <meta property='og:image:height' content='200' />
@@ -59,7 +61,7 @@ function Nav() {
     else if (currentPath === '/contact') {
         pageTitle = 'Contact Page';
         pageDescription = 'Contact us at www.example.com !';
-        meta_images = contactImage;
+        meta_images = 'https://cdn3.vectorstock.com/i/1000x1000/78/57/react-icon-in-a-hexagon-vector-36587857.jpg';
     }
     else {
         pageTitle = 'Home Page';
