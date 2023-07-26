@@ -15,7 +15,7 @@ export const Home = () => {
         <Helmet>
             <title>{pageTitle}</title>
             <meta property='og:title' content='Home Page !!' />
-            <meta name="description" content={pageDescription} />
+            <meta property='og:description' content={pageDescription} />
             <meta property="og:image" content={homeImage} />
             <meta property='og:image:width' content='200' />
             <meta property='og:image:height' content='200' />
